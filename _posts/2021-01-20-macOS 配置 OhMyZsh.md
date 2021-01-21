@@ -1,5 +1,7 @@
 ---
 layout: article
+aside:
+  toc: true
 title: macOS 配置 OhMyZsh
 tags: macOS 运维 OhMyZsh
 ---
@@ -11,7 +13,7 @@ tags: macOS 运维 OhMyZsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
-### 安装插件 
+### 安装插件
 
 #### zsh-syntax-highlighting 语法高亮
 
