@@ -6,6 +6,22 @@ title: HTTPie 工具
 tags: HTTPie
 ---
 
+## CURL
+
+### 安装
+
+#### macOS
+
+自带
+
+### 使用
+
+
+
+
+
+## HTTPie
+
 ### 安装
 
 #### macOS

@@ -73,7 +73,7 @@ loaded plugin [analysis-ik]
 | **Elasticsearch** | **MySQL** |
 | :---------------- | :-------- |
 | ES 实例           | Database  |
-| Type              | Table     |
+| Index             | Table     |
 | Document          | Row       |
 | Field             | Column    |
 
@@ -83,7 +83,7 @@ loaded plugin [analysis-ik]
 
 1. 使用 Elasticsearch 提供的 RESTful API 来执行文档的增删改查等操作。
 
-2. 格式为：http://localhost:9200/index/book/1， **Index** 的名称为 book
+2. 格式为：http://localhost:9200/book/1， **Index** 的名称为 book
 
 3. 用 http 方法操作资源，如使用 GET 获取资源，使用 POST、PUT 新增或更新资源，使用 DELETE 删除资源等
 
