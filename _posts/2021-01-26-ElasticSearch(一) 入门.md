@@ -2,17 +2,17 @@
 layout: article
 aside:
   toc: true
-title: ElasticSearch（一）
+title: ElasticSearch(一) 入门
 tags: ElasticSearch
 ---
 
-### 安装
+## 安装
 
-#### 下载
+### 下载
 
 安装 elasticsearch 需要 java8 或以上版本，下载地址： 中国镜像地址 [华为云](https://mirrors.huaweicloud.com/elasticsearch/)
 
-#### 启动
+### 启动
 
 ```
 ./elasticsearch/bin/elasticsearch
@@ -46,6 +46,8 @@ export PATH="/Users/wangping/software/elasticsearch-7.10.1/bin:$PATH"
 }
 ```
 
+### 安装插件
+
 #### 安装中文分词 `IK`
 
 **安装的分词插件要和 elasticsearch 版本保持一致，下载地址：[elasticsearch-analysis-ik](https://github.com/medcl/elasticsearch-analysis-ik)，把下载好的 `IK` 放在 `elasticsearch` 根目录的 `Plugin` 下面**
@@ -58,7 +60,7 @@ loaded plugin [analysis-ik]
 
 
 
-### 概念
+## 概念
 
 *ES7.0 没有 type 这个概念了，之前的 type 表示一个表，index 表示一个库*
 
@@ -79,7 +81,7 @@ loaded plugin [analysis-ik]
 
 
 
-### 使用
+## 使用
 
 1. 使用 Elasticsearch 提供的 RESTful API 来执行文档的增删改查等操作。
 
@@ -89,7 +91,7 @@ loaded plugin [analysis-ik]
 
 4. 下面使用 [HTTPie](https://httpie.io/) 请求接口。
 
-#### 创建索引
+### 创建索引
 
 请求：
 
@@ -112,7 +114,7 @@ content-type: application/json; charset=UTF-8
 }
 ```
 
-#### 查看所有索引
+### 查看所有索引
 
 请求：
 
@@ -134,7 +136,7 @@ yellow open   book  7Ox07xT2RR2I8hv8VhWCQA   1   1          2            0      
 
 
 
-#### 查看索引
+### 查看索引
 
 请求：
 
@@ -177,7 +179,7 @@ content-type: application/json; charset=UTF-8
 }
 ```
 
-#### 删除索引
+### 删除索引
 
 请求：
 
@@ -198,7 +200,7 @@ content-type: application/json; charset=UTF-8
 }
 ```
 
-#### 添加文档
+### 添加文档
 
 book 指索引名称，会将文档添加到此索引下，如果索引不存在会先创建索引；1 为文档唯一标识，可以不写 ES 会自动生成一个唯一的 ID。
 
@@ -233,9 +235,9 @@ content-type: application/json; charset=UTF-8
 }
 ```
 
-#### 更新文档
+### 更新文档
 
-##### 更新整个文档
+#### 更新整个文档
 
 指定索引和 ID，旧文档会替换新文档，响应的结果 `_version` 为 `"updated"` 、`_version` 增加1 
 
@@ -269,7 +271,7 @@ content-type: application/json; charset=UTF-8
 }
 ```
 
-##### 更新局部文档
+#### 更新局部文档
 
 只更新部分文档，而不是替换整个文档，请求路径`_doc` 替换为  `_update`，请求接受参数 `doc`，它会把 doc 中的参数合并到文档中，文档存在的字段会被替换，不存在的会新增进来；结果 `_version` 为 `"updated"` 、`_version` 增加1 
 
@@ -303,9 +305,9 @@ content-type: application/json; charset=UTF-8
 }
 ```
 
-#### 检索文档
+### 检索文档
 
-##### id 检索文档
+#### id 检索文档
 
 请求：
 
@@ -341,7 +343,7 @@ content-type: application/json; charset=UTF-8
 }
 ```
 
-##### 检索某些字段
+#### 检索某些字段
 
 请求：
 
@@ -371,7 +373,7 @@ content-type: application/json; charset=UTF-8
 }
 ```
 
-##### 检索所有文档
+#### 检索所有文档
 
 请求：
 
@@ -437,7 +439,7 @@ content-type: application/json; charset=UTF-8
 }
 ```
 
-##### Query string
+#### Query string
 
 直接在 get 请求时的 url 后追加 `q=key:value`
 
@@ -491,7 +493,7 @@ content-type: application/json; charset=UTF-8
 }
 ```
 
-##### DSL 搜索
+#### DSL 搜索
 
 请求：
 
@@ -543,7 +545,7 @@ content-type: application/json; charset=UTF-8
 }
 ```
 
-##### 删除文档
+### 删除文档
 
 请求：
 
