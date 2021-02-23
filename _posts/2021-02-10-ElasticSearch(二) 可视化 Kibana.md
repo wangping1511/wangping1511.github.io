@@ -1,10 +1,10 @@
-```
+---
 layout: article
 aside:
   toc: true
 title: ElasticSearch(二) 可视化 Kibana
 tags: ["ElasticSearch", "Kibana"]
-```
+---
 
 ## 安装
 
