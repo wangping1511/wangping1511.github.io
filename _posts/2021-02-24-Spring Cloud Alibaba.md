@@ -1,8 +1,12 @@
+---
 layout: article
 aside:
   toc: true
 title: Spring Cloud Alibaba
 tags: ["Spring Cloud Alibaba"]
+---
+
+
 
 ## 构建 Spring Cloud Alibaba 项目
 
@@ -66,11 +70,7 @@ tags: ["Spring Cloud Alibaba"]
 $ ./bin/startup.sh -m standalone
 ```
 
-
-
 ### 服务发现
-
-
 
 添加 maven 依赖
 
