@@ -26,4 +26,5 @@ titles:
 key: page-about
 ---
 
-<div>{%- include extensions/bilibili.html id='7197842884873415815' -%}</div>
+<div>{%- include extensions/bilibili.html id='92525472' -%}</div>
+
