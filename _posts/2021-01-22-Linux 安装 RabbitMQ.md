@@ -1,7 +1,5 @@
 ---
 layout: article
-aside:
-  toc: true
 title: 安装 RabbitMQ
 tags: 运维 RabbitMQ
 ---

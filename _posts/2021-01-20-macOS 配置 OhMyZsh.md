@@ -1,7 +1,5 @@
 ---
 layout: article
-aside:
-  toc: true
 title: macOS 配置 OhMyZsh
 tags: macOS 运维 OhMyZsh
 ---

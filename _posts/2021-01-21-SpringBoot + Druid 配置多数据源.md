@@ -1,12 +1,10 @@
 ---
 layout: article
-aside:
-  toc: true
 title: SpringBoot Druid 配置多数据源
 tags: SpringBoot Druid
 ---
 
-## 1 安装
+## 1 环境
 
 1. SpringBoot 2.2.1.RELEASE
 2. Mybatis-Plus 3.1.0
