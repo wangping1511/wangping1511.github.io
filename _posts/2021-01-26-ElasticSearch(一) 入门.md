@@ -18,12 +18,6 @@ tags: ElasticSearch
 ./elasticsearch/bin/elasticsearch
 ```
 
-或配置环境变量  `~/.bash_profile` ，直接在终端输入  `elasticsearch`  启动
-
-```
-export PATH="/Users/wangping/software/elasticsearch-7.10.1/bin:$PATH"
-```
-
 验证是否启动成功 `http://localhost:9200/`
 
 ```json
