@@ -9,7 +9,7 @@ tags: macOS 运维 OhMyZsh
 ##### [oh my zsh 官网](https://ohmyz.sh/) 在终端运行一下命令：
 
 ```bash
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+$ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
 ### 安装插件
@@ -38,7 +38,7 @@ $ source ~/.zshrc
 下载安装
 
 ```bash
-git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
+$ git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
 ```
 
 在  `~/.zshrc`  中配置
@@ -50,7 +50,7 @@ plugins=(其他的插件 zsh-autosuggestions)
 使配置生效
 
 ```bash
-source ~/.zshrc
+$ source ~/.zshrc
 ```
 
 ### 主题
@@ -64,21 +64,15 @@ ZSH_THEME="ys"
 使配置生效
 
 ```bash
-source ~/.zshrc
+$ source ~/.zshrc
 ```
 
 ### QA
 
 #### 1. 使用 OhMyZsh 配置文件为 .zshrc 会导致 bash 的配置文件 .bash_profile 失效;
 
-在 .zshrc 中添加
-
 ```
-source ~/.bash_profile
-```
-
-使配置生效
-
-```bash
-source ~/.zshrc
+$ vim ~/.zshrc
+## 添加 source ~/.bash_profile
+$ source ~/.zshrc
 ```
