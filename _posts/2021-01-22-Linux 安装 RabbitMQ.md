@@ -23,7 +23,7 @@ Erlang RabbitMQ 版本对应关系：
 
 ```bash
 $ wget --content-disposition https://packagecloud.io/rabbitmq/erlang/packages/el/7/erlang-23.3.4-1.el7.x86_64.rpm/download.rpm
-$ yum localinstall erlang-23.3.4-1.el7.x86_64.rpm
+$ yum -y localinstall erlang-23.3.4-1.el7.x86_64.rpm
 # 查看 Erlang 版本
 $ erl -verion
 ```
@@ -31,7 +31,7 @@ $ erl -verion
 
 ```bash
 $ wget https://github.com/rabbitmq/rabbitmq-server/releases/download/v3.8.0/rabbitmq-server-3.8.0-1.el7.noarch.rpm
-$ yum localinstall rabbitmq-server-3.8.0-1.el7.noarch.rpm
+$ yum -y localinstall rabbitmq-server-3.8.0-1.el7.noarch.rpm
 ```
 
 
